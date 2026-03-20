@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Atomity Frontend Challenge
 
-## Getting Started
+1. Feature Chosen
+I selected the resource usage visualization section and reinterpreted it as a clean, animated data-driven UI.
 
-First, run the development server:
+2. Approach
+I focused on building a scroll-triggered animated section using Framer Motion, emphasizing smooth transitions and staggered animations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+3. Data Handling
+Data is fetched from DummyJSON and transformed into a custom structure. React Query is used for caching and managing loading/error states.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Styling
+I implemented a token-based styling approach using CSS variables to ensure consistency and scalability.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+5. Libraries Used
+- Framer Motion (animations)
+- React Query (data fetching & caching)
+- Tailwind CSS (styling)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+6. Tradeoffs
+I simplified the original table into cards to focus on clarity and animation quality within the time constraint.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+7. Improvements
+With more time, I would:
+- Add real charting (Recharts or D3)
+- Improve accessibility further
+- Add dark/light mode toggle
